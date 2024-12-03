@@ -1,0 +1,20 @@
+<QuizScreen>:
+    FloatLayout:
+        Label:
+            id: question_label
+            text: "¿Cuál es tu color favorito?"
+            font_size: 24
+            size_hint: 0.8, 0.1
+            pos_hint: {'center_x': 0.5, 'y': 0.7}
+
+        Button:
+            text: "Azul"
+            size_hint: 0.3, 0.1
+            pos_hint: {'x': 0.1, 'y': 0.4}
+            on_press: root.submit_answer(1)
+
+        Button:
+            text: "Rojo"
+            size_hint: 0.3, 0.1
+            pos_hint: {'x': 0.6, 'y': 0.4}
+            on_press: root.submit_answer(0)
